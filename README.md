@@ -5,7 +5,9 @@ INSTALLATION INSTRUCTIONS:
 2- Type 'pip install -r requirements.txt' in the terminal to install the dependencies needed to run the app.
 
 3- You'll be in need to install some more dependencies by typing the following in the terminal:
+
    pip install tweepy
+   
    pip install pandas
    pip install textblob
    pip install joblib
