@@ -7,7 +7,6 @@ INSTALLATION INSTRUCTIONS:
 3- You'll be in need to install some more dependencies by typing the following in the terminal:
 
    pip install tweepy
-   
    pip install pandas
    pip install textblob
    pip install joblib
