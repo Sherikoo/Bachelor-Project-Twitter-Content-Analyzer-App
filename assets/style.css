@@ -1,0 +1,407 @@
+#navbar {
+    font-family: "Cooper Black";
+    font-size: 21px;
+    padding-left: 75px;
+    padding-right: 70px;
+    /*font-weight: bold;*/
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#form-label, #features-heading, #knn-heading {
+    font-family: Rockwell;
+    font-size: 24px;
+    color: #5b5d5e;
+    text-shadow: 2px 2px 5px #bdbdbd;
+}
+
+.progress-item, .feature {
+    height: 40px;
+    border-radius: 15px;
+}
+
+.feature {
+    width: 200px;
+    text-align: center;
+    line-height: 40px;
+    /*font-weight: bold;*/
+    font-size: 16px;
+    font-family: Elephant;
+}
+
+.progress-item {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.table-heading {
+    font-family: "Tw Cen MT Condensed";
+    font-size: 30px;
+    color: #5b5d5e;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+#form-container, #knn-form, #graph-div, #knn-table-div, .tables, #text-div{
+    box-shadow: rgb(0 0 0) 0px 0px 30px -10px;
+    border: 1px solid rgba(50, 55, 88, 0.1);
+    border-radius: 10px;
+}
+
+#page-container {
+    width: 90%;
+    margin: auto;
+}
+
+#tables-container, #knn-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+#graph-div {
+    padding: 10px;
+    /*border: 1px solid #2196f3;*/
+}
+
+#data-tables-row {
+    display: flex;
+}
+
+#user-data-col, #content-data-col, #inserted-tweet-col{
+    flex: 1; /* additionally, equal width */
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 200px;
+    font-size: 16px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+    /* bottom = footer height */
+    /*padding: 25px;*/
+}
+
+#submit-button {
+    font-family: Elephant;
+    font-size: 18px;
+    /*font-weight: bold;*/
+}
+
+.info-button {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    border-width: medium;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0;
+    /*position: relative;*/
+    color: #616869;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.info-col {
+    margin-left: 0;
+    padding-left: 0;
+    position: relative;
+    vertical-align: inherit;
+}
+
+.btn-outline-secondary {
+    color: #798385;
+}
+
+.btn {
+    box-shadow: 0 1px 4px #475a5e;
+}
+
+input[type=radio] {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+#knn-button {
+    font-weight: bold;
+    font-family: "MV Boli";
+    font-size: 20px;
+}
+
+@keyframes moveUp {
+  from {top: 1500px;}
+  to {top: 0px; }
+}
+
+.tables, #graph-div, #user-table-heading-div,  #tweet-table-heading-div, #analyzed-tweet-heading{
+    text-align: center;
+    position: relative;
+    animation-name: moveUp;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#knn-table-div {
+    text-align: center;
+    position: relative;
+    border: 2px solid #2196f3;
+}
+
+#page-container, #knn-table-div, #text-div{
+    animation-name: fadein;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+
+.table {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #dee2e6;
+    height: 97%;
+}
+
+#img-button {
+    padding: 0;
+}
+
+.tweet-frame {
+    align-content: center;
+    border: 0;
+}
+
+#tweet-modal-body {
+    height: 580px;
+}
+
+#tweet-modal {
+    width: 610px;
+}
+
+.tables{
+    /*height: 420px;*/
+    height: 100%;
+    font-size: 16px;
+    font-family: Rockwell;
+}
+
+#tweet-frame-div {
+    padding: 10px;
+}
+
+#tweet-char-table {
+    height: 97%;
+}
+
+#img-button:hover {
+    padding: 2px;
+}
+
+.comparison-tables {
+    height: 460px;
+    font-size: 18px;
+    font-family: Rockwell;
+    color: #2196f3;
+}
+
+.comparison-tables td{
+    vertical-align: inherit;
+    border-top: none;
+    padding: 4px;
+}
+
+.table thead th {
+    vertical-align: inherit;
+}
+
+#text-div {
+    height: 480px;
+    font-size: 20px;
+    color: #2196f3;
+    text-align: center;
+    position: relative;
+    font-family: "MV Boli";
+    border: 4px solid #2196f3;
+}
+
+#text-title-div {
+    color: white;
+    background-color: #2196f3;
+    padding: 10px;
+    font-size: 28px;
+    font-family: "Cooper Black";
+}
+
+#tweet-text-div {
+    padding: 20px;
+}
+
+#radios {
+    font-family: "Cooper Black";
+    color: #787b7d;
+    font-size: 16px;
+}
+
+.feature-column {
+    font-weight: bold;
+}
+
+#user-char-info-div {
+    height: 100%;
+    position:relative;
+}
+
+.info-div {
+    height: 100%;
+    position:relative;
+}
+
+.feature-row {
+    margin-bottom: 16px;
+}
+
+#user-info-col1, #user-info-col2, #tweet-info-col1, #tweet-info-col2 {
+    display: inline-block;
+}
+
+#user-info-div1, #tweet-info-div1 {
+    float: right;
+}
+
+#user-info-div2, #tweet-info-div2 {
+    float: left;
+}
+
+#user-char-info-btn, #tweet-char-info-btn {
+    width: 26px;
+    height: 26px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #616869;
+}
+
+#feature-info-btn {
+    width: 26px;
+    height: 26px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #616869;
+    font-family: "Times New Roman";
+}
+
+
+#knn-info-btn {
+    border-radius: 20%;
+    width: 42px;
+    height: 42px;
+    float: left;
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: "Times New Roman";
+}
+
+#knn-info-col {
+    display: inline-block;
+}
+
+.loading-main {
+    margin-top: 12%;
+}
+
+.tables td{
+    width: 50%;
+    /*white-space:pre;*/
+    vertical-align: inherit;
+    white-space: pre-wrap;
+}
+
+#user-data-table, #inserted-tweet {
+    height: 100%;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+#tweets-graph {
+    border: 4px solid rgb(223, 223, 223);
+    border-radius: 5px;
+}
+
+.progress-bar {
+    color: #444;
+    font-family: Elephant;
+    font-size: 15px;
+}
+
+#error-modal {
+    font-size: 20px;
+    font-family: Rockwell;
+}
+
+#error-close {
+    font-weight: bold;
+}
+
+#logo {
+    width: 60%;
+}
+
+.even {
+    float: right;
+}
+
+.odd {
+    float: left;
+}
+
+.card-title {
+    font-size: 22px;
+    font-family: "Cooper Black";
+}
+
+.card-text {
+    font-size: 18px;
+    font-family: Bahnschrift;
+}
+
+#usage-heading, #about-heading {
+    font-family: Rockwell;
+    font-size: 50px;
+}
+
+#usage-desc {
+    margin-top: 20px;
+}
+
+#about-desc {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 50%;
+}
